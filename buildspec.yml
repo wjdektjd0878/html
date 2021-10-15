@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Build Starting on `date`
       - chmod +x ./gradlew
-      - sudo update-alternatives --config java
+      - update-alternatives --config java
       - gradle wrapper --gradle-version 3.3
       - ./gradlew clean build
   post_build:
